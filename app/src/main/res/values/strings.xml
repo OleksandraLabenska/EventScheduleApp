@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyDiary</string>
+    <string name="title_activity_maps">MyDiary</string>
+    <string name="add_new_eventBT">Add new event</string>
+    <string name="title_pick_date">Pick a date</string>
+    <string name="add_event_locatBT">Add event location</string>
+    <string name="title_set_title_place">Put the title and place of the event</string>
+    <string name="title_hint">Title of event</string>
+    <string name="location_hint">Location of event</string>
+    <string name="add_eventBT">Add event</string>
+    <string name="toast_date_time">Please, enter the date and the time of the event</string>
+    <string name="toast_date">Please, enter the date of the event</string>
+    <string name="toast_time">Please, enter the time of the event</string>
+    <string name="toast_title_location">Please, enter the title  and the location of the event</string>
+    <string name="toast_title">Please, enter the title of the event</string>
+    <string name="toast_location">Please, enter the location of the event</string>
+
+
+</resources>

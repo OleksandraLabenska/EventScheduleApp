@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple_main"
+    android:paddingTop="50dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/origamibird"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/titleTV"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_pick_date"
+        app:layout_constraintBottom_toTopOf="@+id/timeTP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-light"
+        android:textSize="25sp"
+        android:paddingVertical="10dp"
+        android:gravity="center_horizontal"/>
+
+    <TimePicker
+        android:id="@+id/timeTP"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:scaleX="0.80"
+        android:scaleY="0.80"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/dateDP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTV"
+        android:background="@drawable/roundlist" />
+
+
+    <DatePicker
+        android:id="@+id/dateDP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundlist"
+        android:calendarTextColor="@color/white"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:scaleX="0.80"
+        android:scaleY="0.80"
+        app:layout_constraintBottom_toTopOf="@+id/addEventLocationBT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeTP" />
+
+    <Button
+        android:id="@+id/addEventLocationBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_event_locatBT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateDP"
+        android:onClick="addEventDate"
+        android:background="@drawable/roundbutton"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
